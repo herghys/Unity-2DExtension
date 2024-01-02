@@ -13,7 +13,7 @@ namespace Herhys.Extensions
 		/// <returns></returns>
 		public static Sprite SpriteFromTexture2D(Texture2D _texture)
 		{
-			var texture = GetTextureCopy(_texture);
+			var texture = GetTexture2DCopy(_texture);
 			return Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
 		}
 
@@ -26,7 +26,7 @@ namespace Herhys.Extensions
 		/// <returns></returns>
 		public static Sprite SpriteFromTexture2D(Texture2D _texture, int width, int height)
 		{
-			var texture = GetTextureCopy(_texture);
+			var texture = GetTexture2DCopy(_texture);
 			return Sprite.Create(texture, new Rect(0.0f, 0.0f, width, height), new Vector2(0.5f, 0.5f), 100.0f);
 		}
 
@@ -40,7 +40,7 @@ namespace Herhys.Extensions
 		/// <returns></returns>
 		public static Sprite SpriteFromTexture2D(Texture2D _texture, int width, int height, Vector2 pivot)
 		{
-			var texture = GetTextureCopy(_texture);
+			var texture = GetTexture2DCopy(_texture);
 			return Sprite.Create(texture, new Rect(0.0f, 0.0f, width, height), pivot, 100.0f);
 		}
 
@@ -55,7 +55,7 @@ namespace Herhys.Extensions
 		/// <returns></returns>
 		public static Sprite SpriteFromTexture2D(Texture2D _texture, int width, int height, Vector2 pivot, float ppu)
 		{
-			var texture = GetTextureCopy(_texture);
+			var texture = GetTexture2DCopy(_texture);
 			return Sprite.Create(texture, new Rect(0.0f, 0.0f, width, height), pivot, ppu);
 		}
 		#endregion
